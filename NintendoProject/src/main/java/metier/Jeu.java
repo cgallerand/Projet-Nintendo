@@ -6,13 +6,38 @@ public class Jeu {
 
 	private String titre;
 	private List<Console> consoles;
+	private String boutique;
 	
 	
-	
-	public Jeu(String titre, List<Console> consoles) {
+	public Jeu(String titre, List<Console> consoles, String boutique) {
 		this.titre = titre;
 		this.consoles = consoles;
+		this.boutique = boutique;
 	}
+
+
+
+	
+
+
+
+	public String getBoutique() {
+		return boutique;
+	}
+
+
+
+
+
+
+
+	public void setBoutique(String boutique) {
+		this.boutique = boutique;
+	}
+
+
+
+
 
 
 
@@ -40,10 +65,18 @@ public class Jeu {
 
 
 
+
+
+
+
 	@Override
 	public String toString() {
-		return "Jeu [titre=" + titre + ", consoles=" + consoles + "]";
+		return "Jeu [titre=" + titre + ", consoles=" + consoles + ", boutique=" + boutique + "]";
 	}
+
+
+
+	
 	
 	
 }
