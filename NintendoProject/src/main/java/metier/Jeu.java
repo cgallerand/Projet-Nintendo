@@ -21,6 +21,17 @@ public class Jeu {
 
 
 
+	public Jeu(String titre, List<Console> consoles) {
+		this.titre = titre;
+		this.consoles = consoles;
+	}
+
+
+
+
+
+
+
 	public Boutique getBoutique() {
 		return boutique;
 	}
