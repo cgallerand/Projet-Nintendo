@@ -7,6 +7,8 @@ public class Boutique {
 	private String nom;
 	private String Adresse;
 	private ArrayList<Jeu> listeJeux;
+	
+	
 	public String getNom() {
 		return nom;
 	}
