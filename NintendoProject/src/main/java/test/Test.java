@@ -1,8 +1,10 @@
 package test;
 
+import metier.Client;
 import metier.Console;
 import metier.Jeu;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Test {
@@ -15,6 +17,10 @@ public class Test {
 		Jeu jeu2 = new Jeu("Zelda",consoles, B2);
 		Boutique b1 = new Boutique("B1","34 rue boileau", jeux);
 		Boutique b2 = new Boutique("B2","35 rue boileau", jeux);
+		ArrayList<Jeu> jeux = new ArrayList<Jeu>();
+		jeux.add(jeu1);
+		jeux.add(jeu2);
+		Client client1 = new Client("Jordan", "Abid", jeux);
 	}
 
 }
