@@ -6,11 +6,11 @@ import java.util.List;
 public class Client {
 	private String nom;
 	private String prenom;
-	private List<Jeu> jeu= new ArrayList();
+	private List<Achat> achat= new ArrayList();
 	public Client(String nom, String prenom, List<Jeu> jeu) {
 		this.nom = nom;
 		this.prenom = prenom;
-		this.jeu = jeu;
+		this.achat = achat;
 	}
 	public String getNom() {
 		return nom;
@@ -24,15 +24,15 @@ public class Client {
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
 	}
-	public List<Jeu> getJeu() {
-		return jeu;
+	public List<Achat> getAchat() {
+		return achat;
 	}
-	public void setJeu(List<Jeu> jeu) {
-		this.jeu = jeu;
+	public void setJeu(List<Achat> achat) {
+		this.achat = achat;
 	}
 	@Override
 	public String toString() {
-		return "Client [nom=" + nom + ", prenom=" + prenom + ", jeu=" + jeu + "]";
+		return "Client [nom=" + nom + ", prenom=" + prenom + ", jeu=" + achat + "]";
 	}
 
 	
